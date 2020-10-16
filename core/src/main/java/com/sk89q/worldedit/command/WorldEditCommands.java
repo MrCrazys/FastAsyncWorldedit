@@ -186,7 +186,7 @@ public class WorldEditCommands {
             min = 0,
             max = 0
     )
-    @CommandPermissions("worldedit.debugpaste")
+    @CommandPermissions("worldedit.report,worldedit.debugpaste")
     public void debugpaste(Actor actor) throws WorldEditException, IOException {
         BBC.DOWNLOAD_LINK.send(actor, IncendoPaster.debugPaste());
     }
